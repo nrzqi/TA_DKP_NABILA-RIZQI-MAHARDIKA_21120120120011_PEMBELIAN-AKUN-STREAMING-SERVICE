@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>wePlay</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  </head>
+  <style>
+    input[type=password], select {
+      width: 80%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    input[type=email], select {
+      width: 80%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: #7e96c2;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      border-radius: 4px;
+      width: 80%;
+    }
+
+    button:hover {
+      opacity: 0.8;
+    }
+
+    body {
+      background-color: rgb(209, 219, 231);
+      font-family: Helvetica, sans-serif;
+    }
+
+    div {
+      border-radius: 10px;
+      background-color: #f2f2f2;
+      padding: 20px;
+      padding-left: 100px;
+      margin-left: 10cm;
+      margin-right: 9cm;
+      margin-top: 2cm;
+      margin-bottom: 2cm;
+      box-shadow: 3px 3px 3px grey;
+      height: 390px;
+    }
+
+    span { 
+      font-family: Helvetica, sans-serif;
+      font-weight: lighter;
+      }
+    span b { 
+      font-family: 'Pacifico', cursive;
+      color: rgb(41, 68, 117);
+      font-size: 30pt;
+    }
+
+    img {
+      margin-left: 180px;
+    }
+
+    </style>
+<body>
+  <div>
+    <span><b>wePlay</b> , your source of entertainment</span>
+    <img src="logo.png" id="image" alt="Logo" width="230" height="50" />
+    <br><br>
+    <form action="index.php" method="POST">
+      <label for="email">Email</label><br />
+      <input type="email" placeholder="example@gmail.com" name="email" /><br />
+      <label for="password">Password</label><br />
+      <input type="password" name="password" /><br />
+      <br />
+      <button type="submit">Login</button>
+    </form>	
+  </div>
+  </body>
+</html>
